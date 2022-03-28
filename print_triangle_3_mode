@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(){
+	int mode;
+	int height;
+	int temp = 1;
+	printf("Chon mode {1,2,3}: ");
+	scanf("%d",&mode);
+	printf("Nhap chieu cao cua tam giac: ");
+	scanf("%d",&height);
+	switch(mode){
+		case 1:
+			for(int i = 1; i<= height;i++){
+				for(int j = 1;j<= temp;j++){
+					printf("* ");
+				}
+				printf("\n");
+				temp++;
+			}
+			break;
+		case 2:
+			for(int i = 1;i<= height;i++){
+				for(int j = 1;j<= temp;j++){
+					printf("%d ",j);
+				}
+				printf("\n");
+				temp++;
+			}
+			break;
+		case 3:
+			for(int i = 1;i<= height;i++){
+				for(int j = 1; j<= temp;j++){
+					printf("%c ",64+temp);
+				}
+				printf("\n");
+				temp++;
+			}
+			break;
+	}
+}
