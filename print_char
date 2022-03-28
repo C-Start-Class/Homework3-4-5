@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+	char c;
+	printf("Nhap ki tu: ");
+	scanf("%c",&c);
+	if((c>='A'&&c<='Z')||(c>='a'&&c<='z')){
+		printf("%c la chu cai",c);
+	}
+	else{
+		printf("%c khong phai la chu cai",c);
+	}
+}
